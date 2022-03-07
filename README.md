@@ -7,7 +7,10 @@ This is meant to rip the adult animations and convert them in to GIFs _specifica
 
 ***You must have Python3 installed for this to work.***
 
-Click on "Run.bat" to install necessary Python libraries and run the program.
+1. Put in it's own folder in root folder of "Princess & Conquest." That should be whatever folder steam opens for you when you click "Browse Local Files"
+    - `(ex. C:/SteamLibrary/steamapps/common/Princess & Conquest/{whatever you wanna name the folder hoss})`  
+2. Click on "Run.bat" to install necessary Python libraries and run the program.
+
 The default configuration is to export the images at their default size into the "pic_dump" folder.
 The GifMaker constructor in "Program.py" takes the optional arguments "scale" and "blur" in case you want to try
 and get a bigger picture out of it. That will take longer though. You can also customize where it dumps the images
