@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+### Princess & Conquest Gif Ripper
+---
 
-You can use the [editor on GitHub](https://github.com/momma-regen/P-C_Gif_Ripper/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Decrypter adapted from <http://uuksu.fi/other/RPGMakerDecrypter>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This is meant to rip the adult animations and convert them in to GIFs _specifically_ for "Princess & Conquest."
 
-### Markdown
+***You must have Python3 installed for this to work.***
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+1. Put in it's own folder in root folder of "Princess & Conquest." That should be whatever folder steam opens for you when you click "Browse Local Files"
+    - `(ex. C:/SteamLibrary/steamapps/common/Princess & Conquest/{whatever you wanna name the folder hoss})`  
+2. Click on "Run.bat" to install necessary Python libraries and run the program.
 
-```markdown
-Syntax highlighted code block
+The default configuration is to export the images at their default size into the "pic_dump" folder.
+The GifMaker constructor in "Program.py" takes the optional arguments "scale" and "blur" in case you want to try
+and get a bigger picture out of it. That will take longer though. You can also customize where it dumps the images
+and gets the encrypted archive file in there as well.
+It is unlikely that I will update this at all, but it's python so it shouldn't be hard to modify. Use tkinter to
+throw a GUI on or something. Go nuts.
 
-# Header 1
-## Header 2
-### Header 3
+#### Files:
+>**Program** and **GifMaker** are written pretty much just for this, so they don't have a lot of utility otherwise.
+>They don't really have any funtionality worth making anything out of them.
 
-- Bulleted
-- List
+>**DataTypes** contains an *int_32* class to extend the base int class because I was tired of fucking around with bit
+>lengths to make sure the keys for decrypting were correct. It also has a basic *enum* class I ripped off of
+>Stack Overflow. I guess there's an official enum library for Python now but like... why bother?
 
-1. Numbered
-2. List
+>**ByteReader** is meant to mimick the C# byte reader. It has an enum for seek origin. It uses int_32 as well so
+>you'll either need to take the DataTypes library with it or update it to not use those things.
 
-**Bold** and _Italic_ and `Code` text
+>**Decrypt** is a python version of [uuksu's RPGDecrypter](http://uuksu.fi/other/RPGMakerDecrypter), but slimmed down 
+>to only the stuff I specifically needed for this.
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/momma-regen/P-C_Gif_Ripper/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+I wouldn't necessarily recommend using any of these libraries since they're garbage but do whatever I'm not your
+dad. I just wanted to click a button to get porn and I'm kind enough to share that with you. You're welcome.
