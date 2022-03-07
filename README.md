@@ -1,4 +1,4 @@
-####Princess & Conquest Gif Ripper
+### Princess & Conquest Gif Ripper
 ---
 
 Decrypter adapted from <http://uuksu.fi/other/RPGMakerDecrypter>
@@ -15,7 +15,7 @@ and gets the encrypted archive file in there as well.
 It is unlikely that I will update this at all, but it's python so it shouldn't be hard to modify. Use tkinter to
 throw a GUI on or something. Go nuts.
 
-#####Files:
+#### Files:
 >**Program** and **GifMaker** are written pretty much just for this, so they don't have a lot of utility otherwise.
 >They don't really have any funtionality worth making anything out of them.
 
